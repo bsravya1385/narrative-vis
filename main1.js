@@ -12,9 +12,7 @@ const yscale10 = d3.scaleLog().domain([10,150]).range([800,0]);
 
 xAxis = d3.axisBottom(xscale10);
 
-yAxis = d3.axisLeft(yscale10)
-      .tickValues([10,20,50,100])
-      .tickFormat(d3.format("~s"));
+yAxis = d3.axisLeft(yscale10);
 
 const chart = svg.append("g")
   .attr("transform", "translate(" + margin + "," + margin + ")");

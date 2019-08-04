@@ -1,3 +1,4 @@
+async function init() {
 const margin = 50;
 const width = 300 - 2 * margin;
 const height = 300 - 2 * margin;
@@ -35,3 +36,4 @@ chart.append('g')
 chart.append('g')
     .attr("transform", "translate(" + margin + "," + (margin+height) + ")")
     .call((xAxis));
+}

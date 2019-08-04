@@ -1,20 +1,32 @@
-<style>
   body {
-  font: 11px sans-serif;
+  margin: 0px;
+  overflow: hidden;
 }
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+
+circle {
+  fill: red;
+  opacity: 0.3;
 }
-.dot {
-  stroke: #000;
+
+text {
+  font-family: sans-serif;
 }
-.tooltip {
-  position: absolute;
-  width: 200px;
-  height: 28px;
-  pointer-events: none;
+
+.tick text {
+  font-size: 2.7em;
+  fill: #635F5D;
 }
-</style>
+
+.tick line {
+  stroke: #C0C0BB;
+}
+
+.axis-label {
+  font-size: 5em;
+  fill: #8E8883;
+}
+
+.title {
+  font-size: 3.7em;
+  fill: #635F5D;
+}

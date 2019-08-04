@@ -4,8 +4,8 @@ const width = 800 - 2 * margin;
 const height = 800 - 2 * margin;
 const data = await d3.csv('https://flunky.github.io/cars2017.csv');
 const svg = d3.select("svg")
-  .attr("width", 200)
-   .attr("height", 200);
+  .attr("width", 800)
+   .attr("height", 800);
 
 const xscale10 = d3.scaleLog().domain([10,150]).range([0, 800]);
 const yscale10 = d3.scaleLog().domain([10,150]).range([800,0]);

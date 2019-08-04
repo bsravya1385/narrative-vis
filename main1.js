@@ -7,8 +7,8 @@ const svg = d3.select("svg")
   .attr("width", 200)
    .attr("height", 200);
 
-const xscale10 = d3.scaleLog().domain([10,150]).range([0, 200]);
-const yscale10 = d3.scaleLog().domain([10,150]).range([200,0]);
+const xscale10 = d3.scaleLog().domain([10,150]).range([0, 800]);
+const yscale10 = d3.scaleLog().domain([10,150]).range([800,0]);
 
 xAxis = d3.axisBottom(xscale10)
       .tickValues([10,20,50,100])

@@ -3,10 +3,28 @@
   <head>
     <meta charset="charset">
     <title>Data Visualization hw</title>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
   </head>
+  <style>
+    body {
+      font: 11px sans-serif;
+        }
+    .axis path,
+    .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+    }
+  .dot {
+    stroke: #000;
+    }
+  .tooltip {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    pointer-events: none;
+   }
+  </style>
   <body>
-    <div id="graph"> </div>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="main.js"></script>
   </body>

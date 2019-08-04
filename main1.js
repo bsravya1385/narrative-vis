@@ -10,9 +10,7 @@ const svg = d3.select("svg")
 const xscale10 = d3.scaleLog().domain([10,150]).range([0, 800]);
 const yscale10 = d3.scaleLog().domain([10,150]).range([800,0]);
 
-xAxis = d3.axisBottom(xscale10)
-      .tickValues([10,20,50,100])
-      .tickFormat(d3.format("~s"));
+xAxis = d3.axisBottom(xscale10);
 
 yAxis = d3.axisLeft(yscale10)
       .tickValues([10,20,50,100])
